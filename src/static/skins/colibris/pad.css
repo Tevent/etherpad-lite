@@ -68,3 +68,18 @@ body {
   --scrollbar-track: var(--super-light-color);
   --scrollbar-thumb: var(--dark-color);
 }
+
+.light-background, .light-background #chatbox, .light-background #editorcontainerbox, .light-background #outerdocbody, .light-background #sidediv {
+    --text-color: var(--super-dark-color);
+    --text-soft-color: var(--dark-color);
+    --border-color: var(--middle-color);
+    --bg-soft-color: var(--super-light-color);
+    --bg-color: white;
+	--background: green;
+}
+
+.super-light-editor #outerdocbody iframe, .super-light-editor #outerdocbody>#innerdocbody {
+    --bg-color: var(--super-light-color);
+    box-shadow: 0px 8px 12px #0000004a;
+}
+

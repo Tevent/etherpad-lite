@@ -12,6 +12,7 @@
     --border-color: var(--middle-color);
     --bg-soft-color: var(--super-light-color);
     --bg-color: white;
+	--background: green;
 }
 
 .super-light-editor #outerdocbody iframe, .super-light-editor #outerdocbody>#innerdocbody {
