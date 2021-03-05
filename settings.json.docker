@@ -192,7 +192,7 @@
   /*
    * The default text of a pad
    */
-  "defaultPadText" : "${DEFAULT_PAD_TEXT:Welcome to Etherpad!\n\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\n\nGet involved with Etherpad at https:\/\/etherpad.org\n}",
+  "defaultPadText" : "${DEFAULT_PAD_TEXT:}",
 
   /*
    * Default Pad behavior.
@@ -202,11 +202,11 @@
   "padOptions": {
     "noColors":         "${PAD_OPTIONS_NO_COLORS:false}",
     "showControls":     "${PAD_OPTIONS_SHOW_CONTROLS:true}",
-    "showChat":         "${PAD_OPTIONS_SHOW_CHAT:true}",
-    "showLineNumbers":  "${PAD_OPTIONS_SHOW_LINE_NUMBERS:true}",
+    "showChat":         "${PAD_OPTIONS_SHOW_CHAT:false}",
+    "showLineNumbers":  "${PAD_OPTIONS_SHOW_LINE_NUMBERS:false}",
     "useMonospaceFont": "${PAD_OPTIONS_USE_MONOSPACE_FONT:false}",
-    "userName":         "${PAD_OPTIONS_USER_NAME:false}",
-    "userColor":        "${PAD_OPTIONS_USER_COLOR:false}",
+    "userName":         "${PAD_OPTIONS_USER_NAME:true}",
+    "userColor":        "${PAD_OPTIONS_USER_COLOR:true}",
     "rtl":              "${PAD_OPTIONS_RTL:false}",
     "alwaysShowChat":   "${PAD_OPTIONS_ALWAYS_SHOW_CHAT:false}",
     "chatAndUsers":     "${PAD_OPTIONS_CHAT_AND_USERS:false}",
@@ -244,13 +244,13 @@
   /*
    * Should we suppress errors from being visible in the default Pad Text?
    */
-  "suppressErrorsInPadText": "${SUPPRESS_ERRORS_IN_PAD_TEXT:false}",
+  "suppressErrorsInPadText": "${SUPPRESS_ERRORS_IN_PAD_TEXT:true}",
 
   /*
    * If this option is enabled, a user must have a session to access pads.
    * This effectively allows only group pads to be accessed.
    */
-  "requireSession": "${REQUIRE_SESSION:false}",
+  "requireSession": "${REQUIRE_SESSION:true}",
 
   /*
    * Users may edit pads but not create new ones.
@@ -258,7 +258,7 @@
    * Pad creation is only via the API.
    * This applies both to group pads and regular pads.
    */
-  "editOnly": "${EDIT_ONLY:false}",
+  "editOnly": "${EDIT_ONLY:true}",
 
   /*
    * If true, all css & js will be minified before sending to the client.
@@ -266,7 +266,7 @@
    * This will improve the loading performance massively, but makes it difficult
    * to debug the javascript/css
    */
-  "minify": "${MINIFY:true}",
+  "minify": "${MINIFY:false}",
 
   /*
    * How long may clients use served javascript code (in seconds)?
