@@ -13,7 +13,7 @@ LABEL maintainer="Etherpad team, https://github.com/ether/etherpad-lite"
 #
 # EXAMPLE:
 #   ETHERPAD_PLUGINS="ep_codepad ep_author_neat"
-ARG ETHERPAD_PLUGINS=
+ARG ETHERPAD_PLUGINS="ep_disable_chat ep_cursortrace ep_align ep_headings2 ep_font_size ep_author_hover ep_image_upload ep_font_family ep_embedded_hyperlinks2 ep_copy_paste_images ep_sticky_attributes ep_tables4 ep_themes ep_mammoth"
 
 # Control whether abiword will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -21,7 +21,7 @@ ARG ETHERPAD_PLUGINS=
 #
 # EXAMPLE:
 #   INSTALL_ABIWORD=true
-ARG INSTALL_ABIWORD=
+ARG INSTALL_ABIWORD=true
 
 # Control whether libreoffice will be installed, enabling exports to DOC/PDF/ODT formats.
 # By default, it is not installed.
@@ -29,7 +29,7 @@ ARG INSTALL_ABIWORD=
 #
 # EXAMPLE:
 #   INSTALL_LIBREOFFICE=true
-ARG INSTALL_SOFFICE=
+ARG INSTALL_SOFFICE=true
 
 # By default, Etherpad container is built and run in "production" mode. This is
 # leaner (development dependencies are not installed) and runs faster (among
